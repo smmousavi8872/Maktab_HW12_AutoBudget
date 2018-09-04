@@ -1,3 +1,34 @@
 <resources>
-  <string name="app_name">Maktab_HW12_AutoBudget</string>
+  <string name="app_name">Account Assistant</string>
+
+  <string name="report_text">گزارش</string>
+  <string name="charge_list_text">لیست هزینه ها</string>
+  <string name="deadline_list_text">لیست موعدها</string>
+  <string name="this_month_text">ماه جاری</string>
+  <string name="last_month_text">ماه گذشته</string>
+  <string name="last_month_total_expense_text">98,000,000 تومان</string>
+  <string name="this_month_total_expense">48,053,980 تومان</string>
+  <string name="register_expense_btn_text">ثبت هزینه</string>
+  <string name="ignore_expense_btn_text">صرف نظر</string>
+  <string name="title_activity_new_main">NewMainActivity</string>
+  <string name="menu_item_new_task">موعد جدید</string>
+  <string name="menu_item_show_login_info">Show Login Info</string>
+  <string name="menu_item_hide_login_info">Hide Login Info</string>
+  <string name="menu_item_clear_list">Clear List</string>
+  <string name="menu_item_exit">Exit</string>
+  <string name="new_task_added_alert">موعد جدید افزوده شد</string>
+  <string name="title_is_not_set_alert">عنوان موعد تعیین نشده</string>
+  <string name="update_task_button_title">بروزرسانی موعد</string>
+  <string name="add_task_button_title">افزودن موعد</string>
+  <string name="delete_task_dialog_title">آیا تمایل دارید این موعد حذف شود؟</string>
+  <string name="task_delete_alert">موعد حذف شد</string>
+  <string name="task_update_alert">موعد بروزرسانی شد</string>
+  <string name="set_done_alert">موعد انجام شد</string>
+  <string name="set_undone_alert">موعد مقرر شد</string>
+  <string name="set_important_alert">موعد به عنوان مهم تنظیم شد</string>
+  <string name="date_picker_title">تنظیم تاریخ</string>
+  <string name="task_item_subtitle_date_time_not_set">تاریخ و زمانی مقرر نشده است</string>
+  <string name="time_picker_title">انتخاب زمان</string>
+  <string name="all_task_removed_alert">تمام موعد ها حذف شدند</string>
+  <string name="all_tasks_delete_confirm_alert">آیا تمایل دارید تمام موعدها را حذف کنید؟</string>
 </resources>

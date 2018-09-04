@@ -1,0 +1,192 @@
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.developer.smmousavi.maktab_hw12_autobudget.mvc.controller.fragments.TaskDetailFragment">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="80dp"
+      android:background="#eee">
+
+      <Button
+        android:id="@+id/btn_detail_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0fff"
+        android:drawableEnd="@drawable/ic_edit_black_36dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="ویرایش"
+        android:textSize="16dp"/>
+
+      <Button
+        android:id="@+id/btn_detail_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0fff"
+        android:drawableEnd="@drawable/ic_delete_black_36dp"
+        android:enabled="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="حذف"
+        android:textSize="16dp"/>
+
+      <Button
+        android:id="@+id/btn_detail_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0fff"
+        android:drawableEnd="@drawable/ic_done_black_36dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="تمام"
+        android:textSize="16dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_marginBottom="20dp"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/txt_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="عنوان"
+        android:textSize="16dp"/>
+
+      <EditText
+        android:id="@+id/edt_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_detail_description"
+        android:foregroundTint="#0aa2f9"
+        android:hint="عنوان موعد"
+        android:textSize="16dp"
+        android:textStyle="normal"/>
+
+      <TextView
+        android:id="@+id/edt_detail_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_detail_description"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="تاریخ"
+        android:textSize="16dp"/>
+
+      <Button
+        android:id="@+id/btn_detail_date"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/edt_detail_date"
+        android:background="@drawable/login_button_style"
+        android:hint="انتخاب تاریخ"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16dp"/>
+
+      <TextView
+        android:id="@+id/edt_detail_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_detail_date"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="ساعت"
+        android:textSize="16dp"/>
+
+      <Button
+        android:id="@+id/btn_detail_time"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/edt_detail_time"
+        android:background="@drawable/login_button_style"
+        android:hint="انتخاب ساعت"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16dp"/>
+
+      <CheckBox
+        android:id="@+id/chk_detail_important"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_detail_time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/genera_turquoise_color"
+        android:textSize="14dp"/>
+
+      <TextView
+        android:id="@+id/txt_detail_important"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chk_detail_important"
+        android:layout_marginTop="3dp"
+        android:layout_toStartOf="@+id/chk_detail_important"
+        android:text="مهم است"
+        android:textSize="16dp"/>
+
+      <CheckBox
+        android:id="@+id/chk_detail_set_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk_detail_important"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:buttonTint="@color/genera_turquoise_color"
+        android:textSize="14dp"/>
+
+      <TextView
+        android:id="@+id/txt_detail_set_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chk_detail_set_alarm"
+        android:layout_marginTop="3dp"
+        android:layout_toStartOf="@+id/chk_detail_important"
+        android:text="تنظیم آلارم"
+        android:textSize="16dp"/>
+
+      <CheckBox
+        android:id="@+id/chk_detail_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk_detail_set_alarm"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:buttonTint="@color/genera_turquoise_color"
+        android:textSize="14dp"/>
+
+
+      <TextView
+        android:id="@+id/txt_detail_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chk_detail_done"
+        android:layout_marginTop="3dp"
+        android:layout_toStartOf="@+id/chk_detail_important"
+        android:text="انجام شد"
+        android:textSize="16dp"/>
+    </RelativeLayout>
+  </LinearLayout>
+</ScrollView>

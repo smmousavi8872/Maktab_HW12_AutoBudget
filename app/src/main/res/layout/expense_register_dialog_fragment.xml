@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="20dp">
+
+  <RelativeLayout
+    android:id="@+id/expense_register_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="20dp">
+
+    <Button
+      android:id="@+id/btn_expense_register_nav_up"
+      android:layout_width="28dp"
+      android:layout_height="28dp"
+      android:layout_alignTop="@id/txt_expense_register_title"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:layout_marginTop="10dp"
+      android:layout_toEndOf="@+id/txt_expense_register_title"
+      android:background="@drawable/ic_arrow_forward_black_24dp"/>
+
+
+    <TextView
+      android:id="@+id/txt_expense_register_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="30dp"
+      android:text="ثبت هزینه جدید"
+      android:textColor="#000"
+      android:textSize="20dp"/>
+  </RelativeLayout>
+
+  <EditText
+    android:id="@+id/edt_expense_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/expense_register_header"
+    android:layout_margin="20dp"
+    android:hint="عنوان"/>
+
+
+  <TextView
+    android:id="@+id/txt_category_selection_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/edt_expense_title"
+    android:layout_alignParentEnd="true"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="10dp"
+    android:text="دسته بندی"
+    android:textSize="14dp"/>
+
+  <!--
+    <TextView
+      android:id="@+id/txt_category_selection_text"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:layout_below="@+id/txt_category_selection"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:background="@drawable/border_background"
+      android:textColor="#000"
+      android:textSize="16dp"/>-->
+
+
+  <androidx.appcompat.widget.AppCompatSpinner
+    android:id="@+id/spn_category_selection"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_below="@+id/txt_category_selection_title"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@drawable/border_background">
+
+  </androidx.appcompat.widget.AppCompatSpinner>
+
+
+  <EditText
+    android:id="@+id/edt_expense_amount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/spn_category_selection"
+    android:layout_margin="20dp"
+    android:hint="مبلغ به تومان"
+    android:inputType="numberDecimal"/>
+
+  <TextView
+    android:id="@+id/txt_date_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/edt_expense_amount"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="10dp"
+    android:text="تاریخ"
+    android:textSize="14dp"/>
+
+  <TextView
+    android:id="@+id/btn_date"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_below="@+id/txt_date_title"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@drawable/border_background"
+    android:gravity="center"
+    android:text="97-6-10"
+    android:textColor="#000"/>
+
+  <Button
+    android:id="@+id/btn_expense_register"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_below="@+id/btn_date"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/violet_border_background"
+    android:gravity="center"
+    android:text="ثبت هزینه"
+    android:textColor="#fff"
+    android:textStyle="bold"/>
+
+</RelativeLayout>

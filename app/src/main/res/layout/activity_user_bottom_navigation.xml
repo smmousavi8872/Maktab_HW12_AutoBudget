@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".mvc.controller.activities.UserBottomNavigationActivity">
+
+  <FrameLayout
+    android:id="@+id/user_fragments_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/bottom_navigation_view">
+  </FrameLayout>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/new_expense_fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="55dp"
+    android:backgroundTint="@color/general_violet_color"
+    android:clickable="true"
+    android:src="@drawable/ic_add"
+    app:elevation="9dp"/>
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottom_navigation_view"
+    style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#eee"
+    android:paddingBottom="5dp"
+    app:itemIconTint="@drawable/botton_navigation_menu_item_select"
+    app:itemTextAppearanceActive="@style/nav_view_text_size"
+    app:itemTextColor="@drawable/botton_navigation_menu_item_select"
+    app:menu="@menu/bottom_navigation_menu"/>
+
+</RelativeLayout>

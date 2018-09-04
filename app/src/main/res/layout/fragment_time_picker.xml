@@ -1,0 +1,12 @@
+<TimePicker
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/time_picker"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:headerBackground="@color/genera_turquoise_color"
+  android:numbersSelectorColor="@color/genera_turquoise_color"
+  tools:context="com.developer.smmousavi.maktab_hw12_autobudget.mvc.controller.fragments.TimePickerFragment">
+
+
+</TimePicker>

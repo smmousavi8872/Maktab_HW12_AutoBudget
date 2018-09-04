@@ -2,5 +2,13 @@
 <resources>
   <color name="colorPrimary">#008577</color>
   <color name="colorPrimaryDark">#00574B</color>
-  <color name="colorAccent">#D81B60</color>
+  <color name="colorAccent">#742d92</color>
+  <color name="white">#fff</color>
+  <color name="milk">#eee</color>
+  <color name="general_violet_color">#742d92</color>
+  <color name="general_dark_violet_color">#591097</color>
+  <color name="general_blue_color">#1976d2</color>
+  <color name="genera_turquoise_color">#20afc5</color>
 </resources>
+
+

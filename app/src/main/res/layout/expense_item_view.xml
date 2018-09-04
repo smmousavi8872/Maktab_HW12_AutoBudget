@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/music_track_card_view"
+  android:layout_width="match_parent"
+  android:layout_height="60dp"
+  android:layout_centerVertical="true"
+  android:layout_marginTop="7dp"
+  android:layout_marginBottom="7dp"
+  app:cardBackgroundColor="#eee"
+  app:cardCornerRadius="7dp"
+  app:cardElevation="2dp">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+      android:id="@+id/txt_expense_amount_item"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:scaleType="centerCrop"
+      android:text="26,000 تومان"
+      android:textSize="16dp"
+      android:textStyle="bold"/>
+
+    <TextView
+      android:id="@+id/txt_expense_title_item"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:scaleType="centerCrop"
+      android:text="هایپر میوه"
+      android:textSize="16dp"
+      android:textStyle="bold"/>
+
+    <TextView
+      android:id="@+id/txt_expense_category_item"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:scaleType="centerCrop"
+      android:text="خرید منزل"
+      android:textColor="@color/genera_turquoise_color"
+      android:textSize="14dp"/>
+
+    <TextView
+      android:id="@+id/txt_expense_date_item"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:scaleType="centerCrop"
+      android:text="97/06/10"
+      android:textSize="12dp"/>
+
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
