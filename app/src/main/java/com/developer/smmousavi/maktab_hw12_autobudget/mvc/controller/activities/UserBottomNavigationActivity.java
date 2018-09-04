@@ -12,7 +12,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.PersistableBundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -157,12 +156,11 @@ public class UserBottomNavigationActivity extends AppCompatActivity {
 
 
   public void buildNotificaion(Context ctx, String notificationText) {
-    Log.i("TAG11", "notifcation is called");
     NotificationManager mNotificationManager;
 
     NotificationCompat.Builder mBuilder =
       new NotificationCompat.Builder(ctx.getApplicationContext(), "notify_001");
-    Intent ii = new Intent(ctx.getApplicationContext(), TaskDetailActivity.class);
+    Intent ii = new Intent(ctx.getApplicationContext(), UserBottomNavigationActivity.class);
     PendingIntent pendingIntent = PendingIntent.getActivity(ctx, 0, ii, 0);
 
     NotificationCompat.BigTextStyle bigText = new NotificationCompat.BigTextStyle();

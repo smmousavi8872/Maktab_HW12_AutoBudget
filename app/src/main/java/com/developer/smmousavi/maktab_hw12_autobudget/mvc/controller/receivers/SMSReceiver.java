@@ -38,7 +38,7 @@ public class SMSReceiver extends BroadcastReceiver {
     Account myAccount = new Account();
     myAccount.setName("بانک ملی");
     myAccount.setAccountNumber("71008");
-    myAccount.setSmsNumber("+9820004000");
+    myAccount.setSmsNumber("+989127638779");
     repository.addAccount(myAccount);
 
     final Bundle bundle = intent.getExtras();
